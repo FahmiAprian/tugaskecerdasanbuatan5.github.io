@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas4 Kecerdasan Buatan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <table>
+    <td>
+
+    <div class="container">
+    <span><h1 class="judul">"SEARCH"</h1></span>
+    <h2 class="judul1">1.Konsep Pencarian</h2>
+    <ul>
+        <li>Hal penting dalam menentukan keberhasilan sistem cerdas adalah kesuksesan dalam pencarian.</li>
+        <li>Pencarian = suatu proses mencari solusi dari suatu permasalahan melalui sekumpulan kemungkinan ruang keadaan (state space).</li>
+        <li>Ruang keadaan = merupakan suatu ruang yang berisi semua keadaan yang mungkin.</li>
+    </ul>
+    <Ul>
+        <li class="point1">Untuk mengukur perfomansi metode pencarian, terdapat empat kriteria yang dapat digunakan :</li>
+            <ol>
+            <li>Completeness : Apakah metode tersebut menjamin penemuan solusi jika solusinya memang ada?</li>
+                <li>Time complexity : Berapa lama waktu yang diperlukan?</li>
+                    <li>Space complexity : Berapa banyak memori yang diperlukan?</li>
+                        <li>Optimality : Apakah metode tersebut menjamin menemukan solusi yang terbaik jika terdapat beberapa solusi berbeda?</li>
+            </ol>
+        </ul>
+        <ul>
+        <li class="point2">Pencarian atau pelacakan merupakan salah satu teknik untuk menyelesaikan permasalahan dalam bidang kecerdasan buatan.</li>
+            <li>Teknik dasar pencarian masalah memberikan suatu kunci bagi banyak sejarah penyelesaian yang penting dalam bidang kecerdasan buatan.</li>
+        
+            <h2>2.Teknik Pencarian Dan Penjelasan</h2>
+            <ul type="square">
+                <li>Pada dasarnya ada dua teknik pencarian yang biasanya digunakan, yaitu :</li>
+            </ul>
+
+            <ol>
+                <li>Pencarian buta (blind search)</li>
+                <li>Pencarian terbimbing (heuristic serach)</li>
+            </ol>
+
+            <h3>Pencarian Buta</h3>
+            <ul>
+                <li>Pencarian buta merupakan sekumpulan prosedur yang digunakan dalam melacak ruang keadaan.</li>
+                <li>Pencarian berlangsung sampai solusi terakhir ditemukan.</li>
+                <li>Idenya adalah menguji seluruh kemungkinan yang ada untuk menemukan solusi.</li>
+                <li>Pendekatan ini kurang efisien dan merupakan pemaksaan (brute force search).</li>
+                <li>Dalam memecahkan masalah yang sangat besar sejumlah keadaan baru muncul, sehingga alternatif yang perlu dipertimbangkan pun menjadi lebih banyak.</li>
+                <li>Akibatnya diperlukan waktu yang lama untuk menemukan satu solusi.</li>
+            </ul>
+
+            <h3>Pencarian Heuristic</h3>
+            <ul>
+                <li>Kata heuristic berasal dari bahasa Yunani heuriskein dari kata dasar eureka atau heurika yang berarti mengungkap atau menemukan.</li>
+                <li>Dalam AI, heuristic diperkenalkan sebagai suatu teknik yang meningkatkan efisiensi proses pencarian, yang dimungkinkan dengan mengorbankan kelengkapan.</li>
+                <li>Heuristic seperti pemandu perjalanan yang baik untuk tujuan pokok mencari arah yang secara umum menarik, tetapi bisa jadi tidak baik jika mempertimbangkan ketertarikan tiap orang berbeda untuk tiap objek berbeda.</li>
+                <li>Menggunakan heuristic karena berharap mendapatkan solusi yang baik dari masalah yang sulit.</li>
+                <li>Satu contoh general-purpose heuristic yang baik yang berguna untuk banyak kombinasi masalah adalah nearest neighbor heuristic, yang bekerja dengan menyeleksi alternatif lokal terbaik pada tiap langkah.</li>
+                <li>Aplikasinya adalah dalam masalahTravelling Salesman, yang menggunakan beberapa prosedur berikut :</li>
+                    <ol>
+                        <li>Pilih secara acak satu kota sebagai awal perjalanan</li>
+                        <li>Untuk memilih kota berikut, lihat semua kota yang belum dikunjungi dan pilih yang terdekat lalu kunjungi.</li>
+                        <li>Ulangi langkah 2 sampai semua kota dikunjungi.</li>
+                    </ol>
+            </ul>
+
+            <h2>3.Karakteristik Masalah</h2>
+            <ul>
+                <li>Pencarian heuristic adalah metode yang sangat umum yang dapat diterapkan dalam begitu banyak masalah meliputi begitu banyak variasi teknik yang spesifik, dimana masing-masing efektif untuk penyelesaian masalah tertentu yang lebih spesifik.</li>
+                <li>Untuk memilih metode mana/kombinasi metode mana yang akan digunakan untuk menyelesaikan masalah, penting untuk menganalisa masalah pada beberapa dimensi kunci atau karakteristik sebagai berikut :</li>
+                <ol>
+                    <li>Dapatkah masalah disederhanakan kedalam kelompok terpisah yang lebih kecil atau subprogram yang lebih mudah ?</li>
+                    <li>Dapatkah satu tahap penyelesaian solusi diabaikan atau setidaknya tidak dilakukan jika terbukti tidak layak ?</li>
+                    <li>Apakah ruang lingkup masalah dapat diprediksi ?</li>
+                    <li>Dapatkah dinyatakan sebuah solusi yang baik untuk penyelesaian masalah tanpa membandingkannya dengan solusi lain yang mungkin ?</li>
+                    <li>Solusi yang diinginkan adalah sebuah stata atau jalur menuju stata ?</li>
+                    <li>Apakah sejumlah pengatahuan mutlak diperlukan untuk menyelesaikan masalah atau pengetahuan hanya diperlukan untuk membatasi pencarian ?</li>
+                    <li>Dapatkah komputer yang diberikan permasalahan langsung memberikan solusi atau pemecahan masalah memerlukan interaksi antara komputer dan manusia ?</li>
+                </ol>
+            </ul>
+
+            <h2>4.Teknik Search</h2>
+            <ol>
+                <li>Arah search</li>
+                <ul>
+                    <li>Dapat dilakukan : Maju, bermula dari keadaan awal (start state) Mundur, diawali dari keadaan tujuan (goal state)</li>
+                </ul>
+            </ol>
+
+            <ol>
+                <li>Topologi proses search</li>
+                <ul>
+                    <li>Ada dua macam penggambaran problem, yaitu dalam bentuk :</li>
+                    <ol>
+                        <li>Pohon (tree)</li>
+                        <li>Graf (graph) : Graf berarah dan Graf tidak berarah</li>
+                    </ol>
+                </ul>
+            </ol>
+
+            <h2>5.Metode Breadth-First-Search</h2>
+            <ul>
+                <li>Atau algoritma pencarian melebar adalah algoritma yang melakukan pencarian secara melebar yang mengunjungi simpul secara preorder yaitu mengunjungi suatu simpul kemudian mengunjungi semua simpul yang bertetangga dengan simpul tersebut terlebih dahulu.</li>
+            
+            <img class="materi1" src="./images/materi1.png" alt="">
+            <li>Selanjutnya, simpul yang belum dikunjungi dan bertetangga dengan simpul simpul yang tadi dikunjungi, demikian seterusnya.</li>
+            <li>Jika graf berbentuk pohon berakar, maka semua simpul pada aras d dikunjungi lebih dahulu sebelum simpulsimpul pad aras d+1.</li>
+            <li>Merupakan pencarian yang dilakukan dengan mengunjungi tiap tiap node secara sistematis pada setiap level hingga keadaan tujuan ditemukan.</li>
+            <li>Penelusuran yang dilakukan dengan mengunjungi nodenode pada level yang sama hingga ditemukan tujuan (goal state) nya.</li>
+        </ul>
+
+        <ul type="square">
+            <li>Algoritma Breadth-First-Search :</li>
+        </ul>
+        <ol>
+            <li>Bentuk variabel dengan nama NODE-LIST dan jadikan sebagai initial state.</li>
+            <li>Sampai goal state ditemukan atau NODE-LIST kosong, lakukan :</li>
+            <ul type="disc">
+                <li>Ambil elemen pertama dari NODE-LIST, sebut E. jika NODE-LIST kosong, quit</li>
+                <li>Untuk tiap cara dimana tiap aturan(fungsi) dapat cocok dengan stata di E, lakukan :</li>
+                <ol type="i">
+                    <li>Gunakan aturan(fungsi) untuk menuju stata baru</li>
+                    <li>Jika stata baru adalah goal state, quit return stata ini</li>
+                    <li>Jika bukan, tambahkan stata baru di akhir NODE-LIST.</li>
+                </ol>
+            </ul>
+        </ol>
+
+        <ul type="square">
+            <li>Kebaikan Breadth-First-Search :</li>
+            <ol>
+                <li>Breadth-First-Search tidak akan terjebak untuk menelusuri satu jalur tertentu saja</li>
+                <li>Jika solusi memang ada, maka dijamin Breadth-FirstSearch akan menemukannya.</li>
+            </ol>
+        </ul>
+
+        <ul type="square">
+            <li>Keburukan Breadth-First-Search :</li>
+            <ol>
+                <li>Memerlukan memori lebih besar karena harus menyimpan semua simpul dari tree yang ditelusuri</li>
+                <li>Harus menelusuri semua bagian tree pada level yang sama sebelum beralih ke level berikutnya.</li>
+            </ol>
+        </ul>
+
+        <h2>Metode Depth-First-Search</h2>
+        <ul>
+            <li>Teknik pencarian dengan Depth First Search adalah melakukan ekspansi menuju node yang paling dalam pada tree.</li>
+            <li>Node paling dalam dicirikan dengan tidak adanya successor dari node itu.</li>
+            <li>Setelah node itu selesai diekspansi, maka node tersebut akan ditinggalkan, dan dilakukan ke node paling dalam lainnya yang masih memiliki successor yang belum diekspansi.</li>
+            <li>Pencarian menggunakan Depth First Search akan berlanjut terus sampai kedalaman paling terakhir dari tree.</li>
+            <img class="materi2" src="./images/materi2.png" alt="">
+            <li>Permasalahan yang muncul pada DFS adalah ketika proses pencarian tersebut menemui infinite state space.</li>
+            <li>Hal ini bisa diatasi dengan menginisiasikan batas depth pada level tertentu semenjak awal pencarian.</li>
+            <li>Sehingga node pada level depth tersebut akan diperlakukan seolah-olah mereka tidak memiliki successor</li>
+        </ul>
+
+        <ul type="square">
+            <li>Algoritma Depth-First-Search :</li>
+            <ol>
+                <li>Jika initial state adalah goal state, quit dan return success</li>
+                <li>Jika bukan, lakukan dibawah ini sampai dicapai sinyal success atau gagal</li>
+                <ol type="a">
+                    <li>Tentukan successor, E dari initial state. Jika tidak ada lagi successor, maka sinyal gagal</li>
+                    <li>Jalankan Depth-Fisrt-Search dengan E sebagai initial state</li>
+                    <li>Jika success dihasilkan, sinyal success. Jika tidak maka ulangi langkah 2.</li>
+                </ol>
+            </ol>
+        </ul>
+
+        <ul type="square">
+            <li>Kebaikan Depth-First-Search :</li>
+            <ol>
+                <li>Depth-First-Search memerlukan ruang memori lebih kecil karena hanya menyimpan simpul-simpul dari path/jalur yang sedang dikerjakan.</li>
+                <li>Dapat menemukan solusi tanpa menelusuri terlalu banyak ruang search.</li>
+            </ol>
+        </ul>
+
+        <ul type="square">
+            <li>Keburukan Depth-First-Search :</li>
+            <ol>
+                <li>Ada kemungkinan terjebak pada satu jalur sampai terlalu jauh, bahkan selamanya, sebelum jalur tsb mendapatkan stata yang tidak lagi memiliki successor (buntu).</li>
+                <li>Mungkin menemukan jalur panjang ke solusi pada satu bagian dari tree, sementara jalur terpendek tersedia pada bagian lain tree yang belum ditelusuri.</li>
+            </ol>
+        </ul>
+
+    <footer>
+        <div class="hak">
+            <a href="https://fahmiaprian.github.io/">Kunjungi Portfolio saya..!!</a>
+            <p>Learn to code, learn to be creative.</p>
+        </div>
+    </footer>
+
+</td>
+</div>
+</table>
+</body>
+</html>

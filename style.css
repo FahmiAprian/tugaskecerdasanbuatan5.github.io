@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+.judul {
+  color: rgb(175, 172, 122);
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+
+body {
+  color: blanchedalmond;
+  background-image: url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.materi {
+  width: 500px;
+  height: 250px;
+}
+
+dd {
+  text-align: justify;
+}
+
+dt {
+  margin: 10px;
+}
+
+footer {
+  float: left;
+}
+
+.hak {
+  font-size: 15px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.hak a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(11, 178, 255);
+}
+
+table {
+  width: 1000px;
+
+  margin: 70px auto;
+  background-color: rgba(88, 73, 143, 0.295);
+}
+
+.materi1 {
+  width: 500px;
+  height: 350px;
+}
+
+.materi2 {
+  width: 500px;
+  height: 350pxx;
+}
+
+h2 {
+  color: violet;
+  text-align: center;
+}
+
+h3 {
+  color: tomato;
+  text-align: center;
+}
